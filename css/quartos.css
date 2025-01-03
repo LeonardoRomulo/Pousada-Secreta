@@ -161,6 +161,10 @@ footer h3 {
     padding: 12px;
 }
 
+.container-contato a:hover {
+    font-size: 18px;
+}
+
 .container-contato h2 {
     color: #fff;
     font-size: 28px;
