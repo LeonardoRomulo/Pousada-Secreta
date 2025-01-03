@@ -149,6 +149,9 @@ span {
     margin: 15px 0;
     cursor: pointer;
 }
+.card a:hover {
+    color: #0496E3;
+}
 
 /* rotas */
 
