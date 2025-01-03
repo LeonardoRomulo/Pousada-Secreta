@@ -56,6 +56,11 @@ span {
     margin-left: 15px;
 }
 
+.link-topo:hover {
+    font-size: 22px;
+    color: #0496E3;
+}
+
 /* conteúdo principal */
 
 .container-principal {
