@@ -1,0 +1,173 @@
+/*  css global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source sans pro', sans-serif;
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+
+
+body {
+    text-align: center;
+}
+
+span {
+    color: #0496E3;
+}
+
+.limitar-secao {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*  topo */
+
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    padding: 20px
+}
+
+.topo h2 {
+    font-weight: normal;
+}
+
+.container-topo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-topo {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+/* banner */
+
+.banner  {
+    background-image: url('../assets/img-fundo.jpg');
+    width: 100%;
+    height: 290px;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+/*  Conteúdo principal seção quartos */
+.box-texto {
+    margin: 0 auto;
+    height: 100px;
+    min-width: 900px;
+}
+.box-informacoes h3 {
+    color: #1d1d1d;
+    font-weight: none;
+}
+.container {
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-img {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.box-img img{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+}
+
+.box-informacoes   {
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.box-informacoes ul  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 160px;
+}
+
+.container-info{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: center;
+    gap: 10px;
+}
+
+
+/* estilização do rodapé  */
+footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(69, 140, 114);
+}
+
+footer h3 {
+    color: #fff;
+}
+.container-contato {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container-contato a {
+    color: #fff;
+    padding: 12px;
+}
+
+.container-contato h2 {
+    color: #fff;
+    font-size: 28px;
+    text-align: justify;
+}
+
+.container-paragrafo-rodape {
+    margin: 0 auto;
+    width: 1200px;
+    border-top: 1px solid #fff;
+}
+
+.container-paragrafo-rodape p {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
