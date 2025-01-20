@@ -14,13 +14,15 @@
         <!-- topo e navegação do site -->
         <header class="topo">
             <div class="container-topo limitar-secao">
-                <a href="#container-principal">
-                    <h2>Pousada
-                        <span>Secreta</span>
-                    </h2>
-                </a>
 
-                <nav>
+                <div class="container-link-logotipo">
+                    <a href="index.html">
+                        Pousada
+                        <span>Secreta</span>
+                    </a>
+                </div>
+
+                <nav class="container-links">
                     <a class="link-topo" href="index.html#sobre">SOBRE</a>
                     <a class="link-topo" href="index.html#rota">ROTAS</a>
                     <a class="link-topo" href="quarto.html">QUARTOS</a>
@@ -29,9 +31,9 @@
             </div>
         </header>
 
-        <!-- Conteúdo principal do site com banner titulo e cards de apresentação -->
+        <!-- Conteúdo principal do site com banner titulo e quartos de apresentação -->
         <main>
-            <div class="container-principal" id="container-principal">
+            <div class="banner" id="banner">
 
                 <div class="container-titulo">
                     <h1>Pousada Secreta</h1>
@@ -40,25 +42,27 @@
                 </div>
             </div>
 
-            <div class="limitar-secao">
-                <div class="box-texto">
+            <div class="secao-container limitar-secao">
+                <div class="container-descricao">
                     <h2>SEJA BEM-VINDO (A)!</h2>
-                    <p>Relaxe em nossas acomodações e curta o melhor de Angra dos Reis</p>
+                    <p>Relaxe em nossas acomodações e curta o melhor de Angra
+                        dos Reis</p>
                     <p>Temos quartos para solteiro, casal ou família</p>
                 </div>
-                <div class="container-card limitar-secao">
 
-                    <div class="card">
+                <div class="container-quartos limitar-secao">
+
+                    <div class="quarto">
                         <img src="assets/quarto-solteiro1.jpg"
                             alt="quarto solteiro">
-                        <a href="quarto.html#quarto-solteiro">QUARTO DE
-                            SOLTEIRO</a>
+                        <a href="quarto.html#quarto-solteiro"><p>Quarto de
+                                Solteiro</p></a>
                     </div>
-                    <div class="card">
+                    <div class="quarto">
                         <img src="assets/quarto-casal1.jpg" alt="quarto casal">
                         <a href="quarto.html#quarto-casal">QUARTO DE CASAL</a>
                     </div>
-                    <div class="card">
+                    <div class="quarto">
                         <img src="assets/quarto-familia1.jpg"
                             alt="Quarto família">
                         <a href="quarto.html#quarto-familia">QUARTO DE
@@ -69,39 +73,46 @@
         </main>
 
         <!-- Conteúdo com um iframe do mapa de localização da pousada -->
-        <section class="container-rotas" id="rota">
-            <h2>Rota</h2>
-            <p>Veja como chegar até a pousada.</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.256530923946!2d-43.368763051901475!3d-22.982310383889587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2c2293fa63%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1735774919981!5m2!1spt-BR!2sbr"
-                width="12004" height="400" style="border:0;" allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="secao-container" id="rota">
+            <div class="container-descricao">
+                <h2>Rota</h2>
+                <p>Veja como chegar até a pousada.</p>
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.256530923946!2d-43.368763051901475!3d-22.982310383889587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2c2293fa63%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1735774919981!5m2!1spt-BR!2sbr"
+                    width="100%" height="350" style="border:0;" frameborder="0" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <!-- Conteúdo sobre a pousada com cards de apresentação -->
-        <section class="container-sobre limitar-secao" id="sobre">
-            <div class="box-texto">
+        <section class="secao-container" id="sobre">
 
+            <div class="container-descricao">
                 <h2>SOBRE A POUSADA!</h2>
                 <p>Conheça um pouco sobre a nossa pousada</p>
             </div>
 
-            <div class="box-sobre">
-                <div class="card-sobre">
-                    <div class="card-texto">
+            <div class="container-cards">
+                <div class="card">
+                    <div class="container-card-descricao">
                         <h3>A pousada</h3>
                         <p>A pousada Dev dispõe dispõe de estacionamento
                             privativo gratuito, piscina ao ar livre e
                             bar.</p>
                     </div>
 
-                    <img src="assets/img1.jpg" alt>
+                    <div class="container-card-img">
+                        <img src="assets/img1.jpg" alt>
+                    </div>
+
                 </div>
-            </div>
-            <div class="box-sobre">
-                <div class="card-sobre">
-                    <div class="card-texto">
+
+                <div class="card">
+                    <div class="container-card-descricao">
                         <h3>Nossos quartos</h3>
                         <p>Os quartos possuem TV de tela plana a cabo,
                             cozinhacompacta e área para refeições. Além
@@ -109,13 +120,14 @@
                             as unidades da Pousada Dev contam com
                             ar-condicionado e guarda-roupa.</p>
                     </div>
-                    <img src="assets/img2.jpg" alt="Quartos">
-                </div>
-            </div>
 
-            <div class="box-sobre">
-                <div class="card-sobre">
-                    <div class="card-texto">
+                    <div class="container-card-img">
+                        <img src="assets/img2.jpg" alt="Quartos">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container-card-descricao">
                         <h3>Alimentação</h3>
                         <p>A pousada seve café da manhã em estilo continetal
                             ou
@@ -123,53 +135,59 @@
                             horas.</p>
                     </div>
 
-                    <img src="assets/img3.jpg" alt="Alimentação">
+                    <div class="container-card-img">
+                        <img src="assets/img3.jpg" alt="Alimentação">
+                    </div>
                 </div>
-            </div>
-            <div class="box-sobre">
-                <div class="card-sobre">
 
-                    <div class="card-texto">
+                <div class="card">
+                    <div class="container-card-descricao">
                         <h3>Recepção</h3>
                         <p>Nossa recepção fica aberta 24 horas</p>
                     </div>
 
-                    <img src="assets/img4.jpg" alt="recepção">
+                    <div class="container-card-img">
+                        <img src="assets/img4.jpg" alt="recepção">
+                    </div>
                 </div>
             </div>
+            </section>
+            <!-- Aqui o rodapé com o endreço e as formas de contato da pousada -->
+            <footer class="rodape">
+                <div class="container-info" id="contatos">
+                    <h2>Entre em contato <br>conosco:</h2>
+                    <div class="card-info-rodape">
+                        <img src="assets/icones/endereco.png" alt="telefone">
+                        <a href="https://maps.app.goo.gl/hYagTGumyiKgSjhy7"
+                            target="_blank">
+                            Endereço: Av. 123, 222 - Rio de Janeiro
+                        </a>
+                    </div>
+                    <div class="card-info-rodape">
+                        <a href>
+                            <img src="assets/icones/telefone.png"
+                                alt="endereço">
+                            <a href="tel:+55210000000" target="_blank">Cel.: +55
+                                21
+                                0000-0000</a>
+                        </a>
+                    </div>
 
-        </section>
-        <!-- Aqui o rodapé com o endreço e as formas de contato da pousada -->
-        <footer>
-            <div class="container-contato" id="contatos">
-                <h2>Entre em contato <br>conosco:</h2>
-                <div class="box-contato">
-                    <img src="assets/icones/endereco.png" alt="telefone">
-                    <a href="https://maps.app.goo.gl/hYagTGumyiKgSjhy7" target="_blank">
-                        Endereço: Av. 123, 222 - Rio de Janeiro
-                    </a>
+                    <div class="card-info-rodape">
+                        <img src="assets/icones/calendario.png" alt="reserva">
+                        <a
+                            href="https://www.booking.com/?aid=2375516&label=01HP5400BCFTC1PQJ217EC9D3F_01JGCCBEWDG6VNAQHHJMMXEH1Z"
+                            target="_blank">
+                            Faça a sua reserva pelo Booking.com
+                        </a>
+                    </div>
+
                 </div>
-                <div class="box-contato">
-                    <a href>
-                        <img src="assets/icones/telefone.png" alt="endereço">
-                        <a href="tel:+55210000000" target="_blank">Cel.: +55 21 0000-0000</a>
-                    </a>
+                <div>
+                    <p>&copy;Copyrigth PousadaDev</p>
                 </div>
 
-                <div class="box-contato">
-                    <img src="assets/icones/calendario.png" alt="reserva">
-                    <a
-                        href="https://www.booking.com/?aid=2375516&label=01HP5400BCFTC1PQJ217EC9D3F_01JGCCBEWDG6VNAQHHJMMXEH1Z" target="_blank">
-                        Faça a sua reserva pelo Booking.com
-                    </a>
-                </div>
+            </footer>
 
-            </div>
-            <div class="container-paragrafo-rodape">
-                <p>&copy;Copyrigth PousadaDev</p>
-            </div>
-
-        </footer>
-
-    </body>
-</html>
+        </body>
+    </html>
